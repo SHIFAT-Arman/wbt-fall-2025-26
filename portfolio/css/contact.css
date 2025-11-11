@@ -1,0 +1,40 @@
+form {
+  padding: 10px;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+}
+
+.inp-text {
+  padding: 5px 0px 5px;
+}
+.radio {
+  padding: 10px 0px;
+}
+
+.radio input {
+  text-align: center;
+}
+
+.services {
+  padding: 5px 0px;
+}
+
+.book-app {
+  padding: 5px 0px;
+}
+
+#sbm,
+#rst {
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #ffccff;
+  border-width: 2px;
+}
+
+#sbm:hover,
+#rst:hover {
+  color: #cc00cc;
+}
