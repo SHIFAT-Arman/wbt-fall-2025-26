@@ -18,47 +18,64 @@
     <h2>Contact Me</h2>
     <hr />
     <form method="GET">
-      <div class="inp-text">
-        First Name:
-        <input type="text" name="firstname" required /><br />
-        Last Name:
-        <input type="text" name="lastname" required /><br />
-        Email: <input type="email" name="email" required /><br />
-        Company: <input type="text" name="company" /><br />
+      <div class="container">
+        <div class="inp-text">
+          <div class="field">
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" required />
+          </div>
+
+          <div class="field">
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Email:</label>
+            <input type="email" name="email" required />
+          </div>
+
+          <div class="field">
+            <label for="company">Company:</label>
+            <input type="text" name="company" />
+          </div>
+        </div>
+
+        <div class="radio">
+          <label for="reason">Reason for contact: </label><br />
+          <input type="radio" name="reason" value="project" required />Project
+
+          <input type="radio" name="reason" value="thesis" />Thesis
+          <input type="radio" name="reason" value="job" />Job <br />
+        </div>
+
+        <div class="services">
+          <label for="services">Services:</label> <br />
+          <input
+            type="checkbox"
+            name="services"
+            value="web-development"
+            required
+          />Web Development <br />
+          <input type="checkbox" name="services" value="aws-microservices" />AWS
+          microservices <br />
+          <input
+            type="checkbox"
+            name="services"
+            value="machine-learning"
+          />Machine Learning <br />
+        </div>
+
+        <div class="book-app">
+          <label for="date">Book an Appointment:</label>
+          <input type="date" value="dd-mm-yyyy" name="date" /><br />
+        </div>
+
+        <div class="btn">
+          <input id="sbm" type="submit" value="Submit" />
+          <input id="rst" type="reset" value="Reset" />
+        </div>
       </div>
-
-      <div class="radio">
-        Reason for contact: <br />
-        <input type="radio" name="reason" value="project" required />Project
-
-        <input type="radio" name="reason" value="thesis" />Thesis
-        <input type="radio" name="reason" value="job" />Job <br />
-      </div>
-
-      <div class="services">
-        Services: <br />
-        <input
-          type="checkbox"
-          name="services"
-          value="web-development"
-          required
-        />Web Development <br />
-        <input type="checkbox" name="services" value="aws-microservices" />AWS
-        microservices <br />
-        <input
-          type="checkbox"
-          name="services"
-          value="machine-learning"
-        />Machine Learning <br />
-      </div>
-
-      <div class="book-app">
-        Book an Appointment:
-        <input type="date" required /><br />
-      </div>
-
-      <input id="sbm" type="submit" value="Submit" />
-      <input id="rst" type="reset" value="Reset" />
     </form>
   </body>
 </html>

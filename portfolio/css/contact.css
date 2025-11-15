@@ -1,17 +1,45 @@
-form {
-  padding: 10px;
+nav {
+  display: flex;
+  justify-content: center;
 }
 
 nav li {
   list-style: none;
   display: inline;
 }
+form {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.inp-text {
+form label {
+  width: 120px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.field {
   padding: 5px 0px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.field label {
+  display: flex;
+  align-items: flex-start;
+  text-align: right;
 }
 .radio {
   padding: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .radio input {
@@ -20,10 +48,25 @@ nav li {
 
 .services {
   padding: 5px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .book-app {
   padding: 5px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.btn input {
+  width: 200px;
 }
 
 #sbm,
